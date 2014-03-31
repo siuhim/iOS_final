@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF65801B18EA092D0049A0E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF65801A18EA092D0049A0E1 /* Foundation.framework */; };
+		BF65801D18EA092D0049A0E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF65801C18EA092D0049A0E1 /* CoreGraphics.framework */; };
+		BF65801F18EA092D0049A0E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF65801E18EA092D0049A0E1 /* UIKit.framework */; };
+		BF65802118EA092D0049A0E1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF65802018EA092D0049A0E1 /* SpriteKit.framework */; };
+		BF65802718EA092D0049A0E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF65802518EA092D0049A0E1 /* InfoPlist.strings */; };
+		BF65802918EA092D0049A0E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF65802818EA092D0049A0E1 /* main.m */; };
+		BF65802D18EA092D0049A0E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF65802C18EA092D0049A0E1 /* AppDelegate.m */; };
+		BF65803018EA092D0049A0E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF65802E18EA092D0049A0E1 /* Main.storyboard */; };
+		BF65803318EA092D0049A0E1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF65803218EA092D0049A0E1 /* ViewController.m */; };
+		BF65803618EA092D0049A0E1 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BF65803518EA092D0049A0E1 /* MyScene.m */; };
+		BF65803818EA092D0049A0E1 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = BF65803718EA092D0049A0E1 /* Spaceship.png */; };
+		BF65803A18EA092D0049A0E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF65803918EA092D0049A0E1 /* Images.xcassets */; };
+		BF65804118EA092D0049A0E1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF65804018EA092D0049A0E1 /* XCTest.framework */; };
+		BF65804218EA092D0049A0E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF65801A18EA092D0049A0E1 /* Foundation.framework */; };
+		BF65804318EA092D0049A0E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF65801E18EA092D0049A0E1 /* UIKit.framework */; };
+		BF65804B18EA092D0049A0E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF65804918EA092D0049A0E1 /* InfoPlist.strings */; };
+		BF65804D18EA092D0049A0E1 /* midtermGayProtestorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF65804C18EA092D0049A0E1 /* midtermGayProtestorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF65804418EA092D0049A0E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF65800F18EA092D0049A0E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF65801618EA092D0049A0E1;
+			remoteInfo = midtermGayProtestor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF65801718EA092D0049A0E1 /* midtermGayProtestor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = midtermGayProtestor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF65801A18EA092D0049A0E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF65801C18EA092D0049A0E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BF65801E18EA092D0049A0E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BF65802018EA092D0049A0E1 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		BF65802418EA092D0049A0E1 /* midtermGayProtestor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "midtermGayProtestor-Info.plist"; sourceTree = "<group>"; };
+		BF65802618EA092D0049A0E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF65802818EA092D0049A0E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF65802A18EA092D0049A0E1 /* midtermGayProtestor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "midtermGayProtestor-Prefix.pch"; sourceTree = "<group>"; };
+		BF65802B18EA092D0049A0E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF65802C18EA092D0049A0E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF65802F18EA092D0049A0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF65803118EA092D0049A0E1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BF65803218EA092D0049A0E1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BF65803418EA092D0049A0E1 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		BF65803518EA092D0049A0E1 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		BF65803718EA092D0049A0E1 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		BF65803918EA092D0049A0E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF65803F18EA092D0049A0E1 /* midtermGayProtestorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = midtermGayProtestorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF65804018EA092D0049A0E1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BF65804818EA092D0049A0E1 /* midtermGayProtestorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "midtermGayProtestorTests-Info.plist"; sourceTree = "<group>"; };
+		BF65804A18EA092D0049A0E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF65804C18EA092D0049A0E1 /* midtermGayProtestorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = midtermGayProtestorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF65801418EA092D0049A0E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF65801D18EA092D0049A0E1 /* CoreGraphics.framework in Frameworks */,
+				BF65801F18EA092D0049A0E1 /* UIKit.framework in Frameworks */,
+				BF65802118EA092D0049A0E1 /* SpriteKit.framework in Frameworks */,
+				BF65801B18EA092D0049A0E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF65803C18EA092D0049A0E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF65804118EA092D0049A0E1 /* XCTest.framework in Frameworks */,
+				BF65804318EA092D0049A0E1 /* UIKit.framework in Frameworks */,
+				BF65804218EA092D0049A0E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF65800E18EA092D0049A0E1 = {
+			isa = PBXGroup;
+			children = (
+				BF65802218EA092D0049A0E1 /* midtermGayProtestor */,
+				BF65804618EA092D0049A0E1 /* midtermGayProtestorTests */,
+				BF65801918EA092D0049A0E1 /* Frameworks */,
+				BF65801818EA092D0049A0E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF65801818EA092D0049A0E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF65801718EA092D0049A0E1 /* midtermGayProtestor.app */,
+				BF65803F18EA092D0049A0E1 /* midtermGayProtestorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF65801918EA092D0049A0E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF65801A18EA092D0049A0E1 /* Foundation.framework */,
+				BF65801C18EA092D0049A0E1 /* CoreGraphics.framework */,
+				BF65801E18EA092D0049A0E1 /* UIKit.framework */,
+				BF65802018EA092D0049A0E1 /* SpriteKit.framework */,
+				BF65804018EA092D0049A0E1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF65802218EA092D0049A0E1 /* midtermGayProtestor */ = {
+			isa = PBXGroup;
+			children = (
+				BF65802B18EA092D0049A0E1 /* AppDelegate.h */,
+				BF65802C18EA092D0049A0E1 /* AppDelegate.m */,
+				BF65802E18EA092D0049A0E1 /* Main.storyboard */,
+				BF65803118EA092D0049A0E1 /* ViewController.h */,
+				BF65803218EA092D0049A0E1 /* ViewController.m */,
+				BF65803418EA092D0049A0E1 /* MyScene.h */,
+				BF65803518EA092D0049A0E1 /* MyScene.m */,
+				BF65803718EA092D0049A0E1 /* Spaceship.png */,
+				BF65803918EA092D0049A0E1 /* Images.xcassets */,
+				BF65802318EA092D0049A0E1 /* Supporting Files */,
+			);
+			path = midtermGayProtestor;
+			sourceTree = "<group>";
+		};
+		BF65802318EA092D0049A0E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF65802418EA092D0049A0E1 /* midtermGayProtestor-Info.plist */,
+				BF65802518EA092D0049A0E1 /* InfoPlist.strings */,
+				BF65802818EA092D0049A0E1 /* main.m */,
+				BF65802A18EA092D0049A0E1 /* midtermGayProtestor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF65804618EA092D0049A0E1 /* midtermGayProtestorTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF65804C18EA092D0049A0E1 /* midtermGayProtestorTests.m */,
+				BF65804718EA092D0049A0E1 /* Supporting Files */,
+			);
+			path = midtermGayProtestorTests;
+			sourceTree = "<group>";
+		};
+		BF65804718EA092D0049A0E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF65804818EA092D0049A0E1 /* midtermGayProtestorTests-Info.plist */,
+				BF65804918EA092D0049A0E1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF65801618EA092D0049A0E1 /* midtermGayProtestor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF65805018EA092D0049A0E1 /* Build configuration list for PBXNativeTarget "midtermGayProtestor" */;
+			buildPhases = (
+				BF65801318EA092D0049A0E1 /* Sources */,
+				BF65801418EA092D0049A0E1 /* Frameworks */,
+				BF65801518EA092D0049A0E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = midtermGayProtestor;
+			productName = midtermGayProtestor;
+			productReference = BF65801718EA092D0049A0E1 /* midtermGayProtestor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF65803E18EA092D0049A0E1 /* midtermGayProtestorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF65805318EA092D0049A0E1 /* Build configuration list for PBXNativeTarget "midtermGayProtestorTests" */;
+			buildPhases = (
+				BF65803B18EA092D0049A0E1 /* Sources */,
+				BF65803C18EA092D0049A0E1 /* Frameworks */,
+				BF65803D18EA092D0049A0E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF65804518EA092D0049A0E1 /* PBXTargetDependency */,
+			);
+			name = midtermGayProtestorTests;
+			productName = midtermGayProtestorTests;
+			productReference = BF65803F18EA092D0049A0E1 /* midtermGayProtestorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF65800F18EA092D0049A0E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jimmy Tang";
+				TargetAttributes = {
+					BF65803E18EA092D0049A0E1 = {
+						TestTargetID = BF65801618EA092D0049A0E1;
+					};
+				};
+			};
+			buildConfigurationList = BF65801218EA092D0049A0E1 /* Build configuration list for PBXProject "midtermGayProtestor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF65800E18EA092D0049A0E1;
+			productRefGroup = BF65801818EA092D0049A0E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF65801618EA092D0049A0E1 /* midtermGayProtestor */,
+				BF65803E18EA092D0049A0E1 /* midtermGayProtestorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF65801518EA092D0049A0E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF65802718EA092D0049A0E1 /* InfoPlist.strings in Resources */,
+				BF65803A18EA092D0049A0E1 /* Images.xcassets in Resources */,
+				BF65803818EA092D0049A0E1 /* Spaceship.png in Resources */,
+				BF65803018EA092D0049A0E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF65803D18EA092D0049A0E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF65804B18EA092D0049A0E1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF65801318EA092D0049A0E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF65803618EA092D0049A0E1 /* MyScene.m in Sources */,
+				BF65803318EA092D0049A0E1 /* ViewController.m in Sources */,
+				BF65802D18EA092D0049A0E1 /* AppDelegate.m in Sources */,
+				BF65802918EA092D0049A0E1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF65803B18EA092D0049A0E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF65804D18EA092D0049A0E1 /* midtermGayProtestorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF65804518EA092D0049A0E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF65801618EA092D0049A0E1 /* midtermGayProtestor */;
+			targetProxy = BF65804418EA092D0049A0E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF65802518EA092D0049A0E1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF65802618EA092D0049A0E1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BF65802E18EA092D0049A0E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF65802F18EA092D0049A0E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF65804918EA092D0049A0E1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF65804A18EA092D0049A0E1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF65804E18EA092D0049A0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF65804F18EA092D0049A0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF65805118EA092D0049A0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "midtermGayProtestor/midtermGayProtestor-Prefix.pch";
+				INFOPLIST_FILE = "midtermGayProtestor/midtermGayProtestor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BF65805218EA092D0049A0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "midtermGayProtestor/midtermGayProtestor-Prefix.pch";
+				INFOPLIST_FILE = "midtermGayProtestor/midtermGayProtestor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BF65805418EA092D0049A0E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/midtermGayProtestor.app/midtermGayProtestor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "midtermGayProtestor/midtermGayProtestor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "midtermGayProtestorTests/midtermGayProtestorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BF65805518EA092D0049A0E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/midtermGayProtestor.app/midtermGayProtestor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "midtermGayProtestor/midtermGayProtestor-Prefix.pch";
+				INFOPLIST_FILE = "midtermGayProtestorTests/midtermGayProtestorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF65801218EA092D0049A0E1 /* Build configuration list for PBXProject "midtermGayProtestor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF65804E18EA092D0049A0E1 /* Debug */,
+				BF65804F18EA092D0049A0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF65805018EA092D0049A0E1 /* Build configuration list for PBXNativeTarget "midtermGayProtestor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF65805118EA092D0049A0E1 /* Debug */,
+				BF65805218EA092D0049A0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF65805318EA092D0049A0E1 /* Build configuration list for PBXNativeTarget "midtermGayProtestorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF65805418EA092D0049A0E1 /* Debug */,
+				BF65805518EA092D0049A0E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF65800F18EA092D0049A0E1 /* Project object */;
+}
