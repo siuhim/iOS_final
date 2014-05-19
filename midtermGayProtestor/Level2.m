@@ -1,19 +1,18 @@
 //
-//  MyScene.m
+//  Level2.m
 //  midtermGayProtestor
 //
-//  Created by Jimmy Tang on 3/31/14.
+//  Created by Jimmy Tang on 4/29/14.
 //  Copyright (c) 2014 Jimmy Tang. All rights reserved.
-
-//reference: www.raywenderlich.com/49625/sprite-kit-tutorial-space-shooter
+//
 
 @import CoreMotion;
 
+#import "Level2.h"
+#import "Level3.h"
 #import "MyScene.h"
 #import "WelcomeScene.h"
 #import "EndScene.h"
-#import "Level2.h"
-#import "Level3.h"
 
 #import "FMMParallaxNode.h"
 
@@ -23,12 +22,14 @@
 extern int globalScore;
 extern int globalLive;
 
+
 typedef enum {
     kEndReasonWin,
     kEndReasonLose
 } EndReason;
 
-@implementation MyScene
+
+@implementation Level2
 
 {
     SKSpriteNode *_ship;
@@ -63,7 +64,7 @@ typedef enum {
     if (self = [super initWithSize:size]) {
         
         //Background
-        SKSpriteNode* background = [SKSpriteNode spriteNodeWithImageNamed:@"b1"];
+        SKSpriteNode* background = [SKSpriteNode spriteNodeWithImageNamed:@"b-2"];
         background.position = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
         [background setXScale:0.5];
         [background setYScale:0.5];
@@ -77,12 +78,6 @@ typedef enum {
         [self addCop];
         //Laser
         [self addLaser];
-        
-        //Snow
-        SKEmitterNode *snow = [NSKeyedUnarchiver unarchiveObjectWithFile:[[NSBundle mainBundle]pathForResource:@"SnowParticle" ofType:@"sks"]];
-        snow.position = CGPointMake(size.width/2, size.height);
-        [snow advanceSimulationTime:10];
-        [self addChild:snow];
         
         //Score
         _myScore = [[SKLabelNode alloc] initWithFontNamed:@"Minecraftia"];
@@ -116,12 +111,12 @@ typedef enum {
 //////////Setup//////////
 
 - (void) addCharacter {
-    _ship = [SKSpriteNode spriteNodeWithImageNamed:@"main-1"];
+    _ship = [SKSpriteNode spriteNodeWithImageNamed:@"main-2"];
     _ship.position = CGPointMake(self.frame.size.width * 0.15, CGRectGetMidY(self.frame));
     _ship.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:_ship.frame.size];
     _ship.physicsBody.dynamic = YES;
     _ship.physicsBody.affectedByGravity = NO;
-    _ship.physicsBody.mass = 0.08;
+    _ship.physicsBody.mass = 0.1;
     [_ship setXScale:0.5];
     [_ship setYScale:0.5];
     [self addChild:_ship];
@@ -130,7 +125,7 @@ typedef enum {
 - (void) addCop {
     _asteroids = [[NSMutableArray alloc] initWithCapacity:kNumAsteroids];
     for (int i = 0; i < kNumAsteroids; ++i) {
-        _asteroid = [SKSpriteNode spriteNodeWithImageNamed:@"enemy-1"];
+        _asteroid = [SKSpriteNode spriteNodeWithImageNamed:@"enemy-2"];
         _asteroid.hidden = YES;
         [_asteroids addObject:_asteroid];
         [_asteroid setXScale:0.5];
@@ -150,15 +145,11 @@ typedef enum {
 }
 
 - (void)startTheGame {
-    _beginTime = 2;
-    _endTime = 2.2;
+    _beginTime = 1.8;
+    _endTime = 1.6;
     
     _levels = 1;
     _levelScoreInterval = 5;
-    
-    globalScore = 0;
-    globalLive = 3;
-    
     
     _nextAsteroidSpawn = 0;
     
@@ -211,7 +202,7 @@ typedef enum {
 //////////Touch//////////
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-
+    
     //Shoot laser
     SKSpriteNode *shipLaser = [_shipLasers objectAtIndex:_nextShipLaser];
     _nextShipLaser++;
@@ -251,15 +242,15 @@ typedef enum {
         
         [self runAction: loseAction];
         
-    } else if (globalScore >= 10) {
+    } else if (globalScore  >= 20) {
         
-       SKAction * Level2Action = [SKAction runBlock:^{
-        Level2 *level2 = [Level2 sceneWithSize:self.size];
-        [self.view presentScene:level2 transition:[SKTransition crossFadeWithDuration:1.0]];
-       }];
+        SKAction * Level3Action = [SKAction runBlock:^{
+            Level3 *level3 = [Level3 sceneWithSize:self.size];
+            [self.view presentScene:level3 transition:[SKTransition crossFadeWithDuration:1.0]];
+        }];
         
-        [self runAction: Level2Action];
-    
+        [self runAction: Level3Action];
+        
     }
     
     
@@ -276,7 +267,7 @@ typedef enum {
         _nextAsteroidSpawn = randSecs + curTime;
         
         float randY = [self randomValueBetween:0.0 andValue:self.frame.size.height];
-        float randDuration = [self randomValueBetween:5.0 andValue:10.0];
+        float randDuration = [self randomValueBetween:3.0 andValue:10.0];
         
         _asteroid = [_asteroids objectAtIndex:_nextAsteroid];
         _nextAsteroid++;
@@ -340,7 +331,8 @@ typedef enum {
             globalLive--;
         }
     }
-
+    
 }
+
 
 @end

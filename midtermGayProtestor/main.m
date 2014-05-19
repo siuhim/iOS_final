@@ -1,4 +1,4 @@
-//
+ //
 //  main.m
 //  midtermGayProtestor
 //
@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
+
+int globalScore;
+int globalLive;
 
 int main(int argc, char * argv[])
 {
